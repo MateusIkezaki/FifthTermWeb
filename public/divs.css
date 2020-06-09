@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --lineoffsetx: -6px;
+    --lineoffsety: -8px;
+}
+
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    overflow-x: hidden;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.banner{
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(covid.jpg); 
+    background-blend-mode: lighten; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    width: 100%;
+    height: 200px;
+}
+
+.blackscreen{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    z-index: 6;
+    pointer-events: none; 
+    transition: opacity 0.3s;
+}
+
+.burger{
+    top: 0px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: 3%;
+    z-index: 8;
+    pointer-events: all;
+}
+
+.burger div{
+    z-index: 8;
+    width: 270%;
+    height: 4px;
+    background-color: rgb(2, 39, 93);;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+
+.nav-links{
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 0%;
+    background-color: rgb(2, 39, 93);
+    box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 60%;
+    transform: translateX(110%);
+    /*movendo a nav bar para fora da pagina*/
+    transition: transform 0.5s ease-in;
+    z-index: 3;
+    margin-top: 1px;
+    justify-content: space-around;
+} 
+.nav-links li{
+    opacity: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-right: 20%;
+}
+.nav-links a:hover{
+    text-decoration: none;
+    color: white;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+.marker{
+    background-color: white;
+    width: 5%;
+    height: 10px;
+}
+
+.description{
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.description h1{
+    color: rgb(2, 39, 93);
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+}
+
+.description h2{
+    color: rgb(2, 39, 93);
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+}
+
+.description p{
+    color: rgb(2, 39, 93);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about{
+    text-align: center;
+}
+.about h1{
+    color: rgb(2, 39, 93);
+    font-family: 'Roboto', sans-serif;
+}
+
+.slidecontainer{
+    width: 100%;
+    height: 180px
+}
+
+.slidecontainer img{
+    height: auto;
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 20%;
+}
+/* .slideblackscreen{
+    z-index: 0;
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    float: left;
+    position: absolute;
+} */
+.slide{
+    text-align: center;
+    width: 100%;
+    background-image: url(./images/DispenserCircuit.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    background-size: 100% auto;
+    z-index: 1;
+    transition: opacity 0.5s;
+    background-blend-mode: darken;
+}
+
+.slide h1{
+    padding-top: 10%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 180%;
+}
+
+.slide p{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.footer{
+    bottom: 0%;
+    margin-top: 2%;
+    background-color: rgb(2, 39, 93);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p{
+    padding-top: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50%;
+    color: white;
+}
+
+.membercontainer{
+    display: flex;
+    width: 100%;
+    margin-left: 1%;
+}
+
+.portrait{
+    border-radius: 4px;
+    margin: 5px;
+    background-color: rgb(2, 39, 93);
+    width: 30%;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portraitholder{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.portraitholder img{
+    width: auto;
+    height: 100%;
+}
+
+.portraitdesc{
+    margin-top: 7.5%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 100%;
+}
+
+.indicator{
+    height: 15px; 
+    width: 7%; 
+    float: right; 
+    margin-top: 3%;
+}
+
+/*iPad Configs*/
+@media only screen and (min-width: 768px)
+{
+    :root{
+        --lineoffsetx: -8px;
+        --lineoffsety: -10px;
+    }
+    
+    .burger div{
+        width: 350%;
+        height: 6px;
+        margin: 5px;
+    }
+    
+    .banner{
+        height: 400px;
+    }
+
+    .description{
+        margin-top: 25%;
+    }
+    
+    .description h1{
+        font-size: 300%;
+    }
+    
+    .description h2{
+        font-size: 220%;
+    }
+
+    .description p{
+        font-size: 150%;
+    }
+
+    .slidecontainer{
+        height: 370px
+    }
+    
+
+    .slide h1{
+        padding-top: 12%;
+        font-size: 320%;
+    }
+    
+    .slide p{
+        font-size: 170%;
+    }
+    
+    .portrait{
+        height: 300px;
+    }
+
+    .portraitdesc{
+        font-size: 150%;
+    }
+
+    .nav-links a{
+        font-size: 35px;
+        margin-right: 20%;
+    }
+
+    .membercontainer{
+        margin-left: 3%;
+    }
+}
+
+
+/*iPad Pro Config*/
+@media only screen and (min-width: 1024px)
+{
+    .banner{
+        height: 600px;
+        width: 100%;
+    }
+
+    .description h1{
+        font-size: 400%;
+    }
+    
+    .description h2{
+        font-size: 350%;
+    }
+
+    .description p{
+        font-size: 200%;
+    }
+
+    .slidecontainer{
+        height: 475px
+    }
+
+    .slide h1{
+        padding-top: 12%;
+        font-size: 400%;
+    }
+    
+    .slide p{
+        font-size: 250%;
+    }
+    
+    .portrait{
+        height: 300px;
+        width: 20%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .portraitdesc{
+        font-size: 175%;
+    }
+
+    .membercontainer{
+        margin-left: 9%;
+    }
+}
+
+@keyframes navFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(var(--lineoffsetx), var(--lineoffsety));
+}
