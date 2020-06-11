@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="divsprojects.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link rel="icon" href="Patriotism.png">
+    
+</head>
+<body>
+    <div class="blackscreen"></div>
+    <div class="description">
+        <h1>Elevator Project</h1>
+        <h2>Eduardo Fakiani · Felipe Kerlakian · Felipe Viseu · Érico Ferreira</h2>
+    </div>
+    <div class="banner" style="background-image: url(./images/epBanner.png);"></div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" >Home</a>
+                <!-- <img src="White.png" style="height: 15px; width: 7%; float: right; margin-top: 3%;"> -->
+            </li>
+
+            <li>
+                <a href="Elevator.html" style="font-weight: bold;">Elevator Project</a>
+                <img src="White.png">
+            </li>
+
+            <li>
+                <a href="Station.html">Anti Covid Station</a>
+            </li>
+
+            <li>
+                <a href="Hug.html">Hugging Robot</a>
+            </li>
+
+            <li>
+                <a href="Hand.html">Safe High Five</a>
+            </li>
+
+            <li>
+                <a href="MaskDis.html">Mask Dispenser</a>
+            </li>
+
+            <li>
+                <a href="App.html">Hued</a>
+            </li>
+
+            <li>
+                <a href="Days.html">7 Day Challenge!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1>Project's Description</h1>
+        <p>Our project is a touchless system inside and outside the Avenues elevator. Our objective is to contain the 
+            spread of the virus when we return to the campus, by eleminating the contact from the elevaror button. </p>
+    </div>
+
+    <br>
+
+    <div class="slidecontainer">
+        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract(2); Transition('EmptyTransition(4)')">
+        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add(2); Transition('EmptyTransition(4)')">
+        <div class="slide" style="background-image: url(./images/ep1.PNG);">
+        </div>
+    </div>
+
+    <div class="imageiconcontainer">
+        <div class="imageicon">
+            <a href="./images/ep1.PNG" target="_blank">
+                <img src="./images/ep1.PNG">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/ep2.PNG" target="_blank">
+                <img src="./images/ep2.PNG">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/ep3.PNG" target="_blank">
+                <img src="./images/ep3.PNG">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/ep4.PNG" target="_blank">
+                <img src="./images/ep4.PNG">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/ep5.png" target="_blank">
+                <img src="./images/ep5.png">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1> About our Project </h1>
+    </div>
+    <div class="projectdesc">
+        <p>The future plans for our project is to consider the feedback received from Mr. Pita and Ms.Yoshida and refine our 
+            final product. Additionally, we plan to meet with engineers from Avenues that will help us to make of our project 
+            a reality. Having this system working in August would be perfect as we think Avenues would benefit a lot from it.
+        </p>
+         <img src="./images/ep5.png">   
+    </div>
+
+    <!-- <div class="footer">
+        <p> Proudly developed by Mateus Mori Ikezaki, 2020 <br> Developer's contact: mateus.ikezaki21@avenues.org </p>
+    </div> -->
+    <br>
+    <script src="app.js"></script>
+
+</body>
+</html>

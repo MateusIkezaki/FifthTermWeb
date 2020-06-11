@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="divsprojects.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link rel="icon" href="Patriotism.png">
+    
+</head>
+<body>
+    <div class="blackscreen"></div>
+    <div class="description">
+        <h1>Mask Dispenser</h1>
+        <h2>Mateus Ikezaki · Alice Pereira · Bernardo Salamonde</h2>
+    </div>
+    <div class="banner" style="background-image: url(./images/Banner.png);"></div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" >Home</a>
+                <!-- <img src="White.png" style="height: 15px; width: 7%; float: right; margin-top: 3%;"> -->
+            </li>
+
+            <li>
+                <a href="Elevator.html">Elevator Project</a>
+            </li>
+
+            <li>
+                <a href="Station.html">Anti Covid Station</a>
+            </li>
+
+            <li>
+                <a href="Hug.html">Hugging Robot</a>
+            </li>
+
+            <li>
+                <a href="Hand.html">Safe High Five</a>
+            </li>
+
+            <li>
+                <a href="MaskDis.html" style="font-weight: bold;">Mask Dispenser</a>
+                <img src="White.png">
+            </li>
+
+            <li>
+                <a href="App.html">Hued</a>
+            </li>
+
+            <li>
+                <a href="Days.html">7 Day Challenge!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1>Project's Description</h1>
+        <p> With our return to campus(hopefully) just around the corner, we are sure people entering the Avenues campus 
+            will have to bring their own masks to campus. However, it's only natural that some will forget or lose their masks. 
+            With that in mind, we developed these mask dispensers that will be spread around the campus to those in urgent need 
+            of protection. All it takes is a quick swipe and you are good to go!</p>
+    </div>
+
+    <br>
+
+    <div class="slidecontainer">
+        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract(5); Transition('EmptyTransition(5)')">
+        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add(5); Transition('EmptyTransition(5)')">
+        <div class="slide" style="background-image: url(./images/md1.png);">
+        </div>
+    </div>
+
+    <div class="imageiconcontainer">
+        <div class="imageicon">
+            <a href="./images/md1.png" target="_blank">
+                <img src="./images/md1.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/md2.png" target="_blank">
+                <img src="./images/md2.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/md3.png" target="_blank">
+                <img src="./images/md3.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/DispenserCircuit.png" target="_blank">
+                <img src="./images/DispenserCircuit.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/md4.jpg" target="_blank">
+                <img src="./images/md4.jpg">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1> About our Project </h1>
+    </div>
+    <div class="projectdesc">
+        <p>We used an Ultrasonic Sensor to detect anything approaching the dispenser. Once the student's hand is close enough, 
+            the sensor will trigger the first Servo motor to rotate, dropping the first mask. Next time a student moves their hand 
+            under the sensor the sensor will rotate the next servo motor. This cycle will repeat until all masks have been dropped, 
+            thus requiring a refill.</p>
+        <img src="./images/DispenserCircuit.png">
+        <p>The dispenser is shaped like a box and its interior is divided into levels, each level holding an individual mask. 
+            Each level is separated by a platform with little bumps on its top surface. These bumps will fit right into the gears 
+            attached to the servo motors. The gears will move the platform backwards, allowing the mask stored at said level fall 
+            right on the student's hand.
+        </p>
+        <img src="./images/Banner.png">
+        <p>We do recognize, however, that this design is flawed. It can only hold up to 5 masks at a time, which is a pretty limited
+            supply. That's why we are still working on new designs. We still need to talk to the head division about our idea, but if
+            we manage to come up with an efficient design, this product would surely be very useful and would make the school's environment
+            a lot safer.
+        </p>
+    </div>
+
+    <!-- <div class="footer">
+        <p> Proudly developed by Mateus Mori Ikezaki, 2020 <br> Developer's contact: mateus.ikezaki21@avenues.org </p>
+    </div> -->
+    <br>
+    <script src="app.js"></script>
+
+</body>
+</html>

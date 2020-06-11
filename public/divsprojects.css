@@ -85,12 +85,20 @@ nav{
     /*movendo a nav bar para fora da pagina*/
     transition: transform 0.5s ease-in;
     z-index: 3;
+    margin-top: 1px;
     justify-content: space-around;
 } 
 .nav-links li{
     opacity: 0;
     list-style: none;
     text-decoration: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-right: 10%;
 }
 
 .nav-links li img{
@@ -100,13 +108,7 @@ nav{
     margin-top: 3%;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-right: 10%;
-}
+
 .nav-links a:hover{
     text-decoration: none;
     color: white;
@@ -138,16 +140,7 @@ nav{
 .description h2{
     color: rgb(2, 39, 93);
     font-family: 'Roboto', sans-serif;
-    font-size: 130%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.description h3{
-    margin-top: 3%;
-    font-size: 15px;
-    color: rgb(2, 39, 93);
-    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
 }
 
 .description p{
@@ -176,38 +169,29 @@ nav{
     width: 10%;
     position: absolute;
     z-index: 2;
-    margin-top: 20%;
+    margin-top: 75px;
     cursor: pointer;
 }
-/* .slideblackscreen{
-    z-index: 0;
-    background-color: black;
-    width: 100%;
-    height: 30%;
-    float: left;
-    position: absolute;
-} */
+
 .slide{
     text-align: center;
+    background-repeat: no-repeat;
     width: 100%;
-    background-image: url(./images/epBanner.png);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(./images/DispenserCircuit.png);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    background-size: 100% auto;
+    background-size: auto 100%; 
     z-index: 1;
     transition: opacity 0.5s;
     background-blend-mode: darken;
+    background-position: 50% 0%;
 }
 
 .slide h1{
+    padding-top: 10%;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 180%;
-}
-
-.slide h4{
-    color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 .slide p{
@@ -230,6 +214,27 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-size: 50%;
     color: white;
+}
+
+.imageiconcontainer
+{
+    display: flex;
+    width: 100%;
+}
+
+.imageicon{
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+    overflow: hidden;
+    border-radius: 4px;
+    
+}
+
+.imageicon img{
+    height: auto;
+    min-height: 100%;
+    width: 100%;
 }
 
 .membercontainer{
@@ -274,6 +279,44 @@ nav{
     margin-top: 3%;
 }
 
+.projectdesc p{
+    color: rgb(2, 39, 93);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projectdesc h2{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(2, 39, 93);
+    text-align: center;
+
+}
+
+.projectdesc img{
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+
+.projectdesc iframe{
+    margin-left: 5%;
+    width:90%;
+    height: 200px;
+    margin-top: 3%;
+}
+
+.linkholder{
+    text-align: center;
+}
+
+.linkholder a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
 /*iPad Configs*/
 @media only screen and (min-width: 768px)
 {
@@ -311,18 +354,16 @@ nav{
     .slidecontainer{
         height: 370px
     }
+    .slidecontainer img{
+        margin-top: 20%;
+    }
     
 
     .slide h1{
-        padding-top: 5%;
+        padding-top: 12%;
         font-size: 320%;
     }
     
-    .slide h4{
-        padding-top: 2%;
-        font-size: 250%;
-    }
-
     .slide p{
         font-size: 170%;
     }
@@ -343,15 +384,39 @@ nav{
     .membercontainer{
         margin-left: 3%;
     }
+
     
-    .nav-links li img{
-    height: 24px; 
-    width: 6%; 
-    margin-top: 1%;
+    .imageicon{
+        width: 20%;
+        height: 120px;
     }
 
-    .description h3{
-        font-size: 175%;
+    .projectdesc p{
+        font-size: 150%;
+    }
+
+    .projectdesc h2{
+        margin-top: 2%;
+        font-size: 250%;
+    }
+
+    .projectdesc iframe{
+        height: 400px;
+    }
+
+    .linkholder a{
+        font-size: 150%;
+    }
+    .projectdesc h2{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(2, 39, 93);
+        text-align: center;
+    }
+
+    .nav-links li img{
+        height: 24px; 
+        width: 6%; 
+        margin-top: 1%;
     }
 }
 
@@ -381,6 +446,7 @@ nav{
     }
 
     .slide h1{
+        padding-top: 12%;
         font-size: 400%;
     }
     
@@ -402,19 +468,24 @@ nav{
     .membercontainer{
         margin-left: 9%;
     }
+
+    .imageicon{
+        width: 20%;
+        height: 150px;
+    }
+
     .nav-links a{
         font-size: 30px;
         margin-right: 20%;
     }
 
+    .projectdesc iframe{
+        height: 500px;
+    }
+
     .nav-links li img{
         height: 28px; 
         width: 6%; 
-        margin-top: 1%;
-    }
-
-    .description h3{
-        font-size: 220%;
     }
 }
 
@@ -427,6 +498,7 @@ nav{
     
     .banner{
         height: 900px;
+        /* background-position: ; */
     }
 
     .description h1{
@@ -438,6 +510,7 @@ nav{
     }
 
     .slide h1{
+        padding-top: 12%;
         font-size: 500%;
     }
     
@@ -460,6 +533,21 @@ nav{
         margin-left: 2%;
     }
 
+    .imageiconcontainer
+    {
+        margin-left: 15%;
+    }
+    
+    .imageicon{
+        width: 12%;
+        height: 150px;
+        margin: 15px;
+    }
+
+    .slidecontainer img{
+        margin-top: 17%;
+    }
+
     .nav-links{
         width: 40%;
     } 
@@ -468,10 +556,23 @@ nav{
         margin-right: 10%;
     }
 
+    .projectdesc iframe{
+        margin-left: 15%;
+        width: 70%;
+        height: 550px;
+    }
+
+    .projectdesc img{
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+    .banner{
+        background-position: 0% -100px;
+    }
     .nav-links li img{
         width: 4%; 
     }
-    
 }
 
 @keyframes navFade{

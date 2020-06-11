@@ -12,13 +12,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link rel="icon" href="Patriotism.png">
 
 </head>
 <body>
     <div class="blackscreen"></div>
     <div class="description">
         <h1>Avenues</h1>
-        <h2>COVID-19 response</h1>
+        <h2>COVID-19: integrating Science and Design</h1>
     </div>
     <div class="banner"></div>
     <div class="burger">
@@ -31,114 +32,82 @@
         <ul class="nav-links">
                 <li>
                     <a href="index.html" style="font-weight: bold;">Home</a>
-                    <img src="White.png" style="height: 15px; width: 7%; float: right; margin-top: 3%;">
+                    <img src="White.png">
                 </li>
     
                 <li>
-                    <a href="imagesgallery.html">Arduino</a>
+                    <a href="Elevator.html">Elevator Project</a>
                 </li>
 
                 <li>
-                    <a href="imagesgallery.html">3D Modelling</a>
+                    <a href="Station.html">Anti Covid Station</a>
                 </li>
 
                 <li>
-                    <a href="imagesgallery.html">Science</a>
+                    <a href="Hug.html">Hugging Robot</a>
                 </li>
 
                 <li>
-                    <a href="imagesgallery.html">App</a>
+                    <a href="Hand.html">Safe High Five</a>
+                </li>
+
+                <li>
+                    <a href="MaskDis.html">Mask Dispenser</a>
+                </li>
+
+                <li>
+                    <a href="App.html">Hued</a>
+                </li>
+
+                <li>
+                    <a href="Days.html">7 Day Challenge!</a>
                 </li>
             </ul>
     </nav>
 
     <div class="description" style="margin-top: 5%; position: static;">
-        <h2>About the Project</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum gravida sem, at mattis est lacinia a. 
-            Nunc ac risus semper, efficitur diam feugiat, sollicitudin ante. </p>
+        <h2>What is Fifth Term?</h2>
+        <p>Fifth term takes place during the last month of the school year and it's an opportunity for students to deep dive on 
+            an elective for 2 weeks. There are two cycles, with a total of 4 weeks, where students have the opportunity to 
+            work with students from other grades to produce a project.</p>  
+        
+        <h2>What is this Deep Dive Elective?</h2>
+        <p>In this deep dive elective, students were prompted to create devices and solutions to tackle challenges and problems 
+            that came with the COVID-19 outbreak. This design challenge resulted in many different amazing products and this 
+            website was produced to showcase them. You can click on the images below or on the three stacked lines at the
+            upper left corner to navigate through each project.
+        </p>
     </div>
 
     <br>
 
     <div class="slidecontainer">
         
-        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract()">
-        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add()">
+        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract(0); Transition('ChangeSlide()');">
+        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add(0); Transition('ChangeSlide()');">
         <div class="slide">
-            <h1 id="title">Arduino</h1>
-            <p id="sub">Coding, Robotics, Circuits, take a look at the robots our students created</p>
+            <a href="Elevator.html" id="slidelink" style="text-decoration: none;">
+                <h4>Projects</h4>
+                <h1 id="title">Touchless Elevator</h1>
+                <p id="sub">Sonic Sensor/Distance Controlled Elevator</p>
+            </a>
         </div>
     </div>
 
     <div class="description" style="margin-top: 5%; position: static;">
-        <h2>Meet our team</h1>
+        <h2>Meet our team</h2>
+        <h3 style="font-weight: bold;">Teachers</h3>
+        <h3>Diego Johnson · Rui Zanchetta · Sabrina Steyer</h3>
+        <h3 style="font-weight: bold;">Students</h3>
+        <h3> Alice Pereira · Ana Berger · Ana Cordeiro</h3>
+        <h3>Bernardo Salamonde · Bianca Zanotti · Eduardo Fakiani</h3>
+        <h3>Érico Ferreira · Felipe Kherlakian · Felipe Viseu</h3>
+        <h3>Francisco Lara · Heloisa De Souza · Isabela Soares</h3>
+        <h3>Luiza Whately · Manuela Vieira · Manuel Zeigler</h3>
+        <h3>Maria Antonia · Mateus Ikezaki · Rodrigo de Andrade</h3>
+        <h3>Valentina Liberman</h3>
     </div>
 
-    <div class="membercontainer">
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/jesus.jpg">
-            </div>
-            <div class="portraitdesc">Member 1</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sosig.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="portraitdesc">Member 2</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sleepy.jpg">
-            </div>
-            <div class="portraitdesc">Member 3</div>
-        </div>
-    </div>
-
-    <div class="membercontainer">
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/jesus.jpg">
-            </div>
-            <div class="portraitdesc">Member 1</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sosig.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="portraitdesc">Member 2</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sleepy.jpg">
-            </div>
-            <div class="portraitdesc">Member 3</div>
-        </div>
-    </div>
-    <div class="membercontainer">
-        <div class="portrait" >
-            <div class="portraitholder">
-                <img src="./images/jesus.jpg">
-            </div>
-            <div class="portraitdesc">Member 1</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sosig.jpg" style="width: 100%; height: auto;">
-            </div>
-            <div class="portraitdesc">Member 2</div>
-        </div>
-        <div class="portrait">
-            <div class="portraitholder">
-                <img src="./images/sleepy.jpg">
-            </div>
-            <div class="portraitdesc">Member 3</div>
-        </div>
-    </div>
-
-    <!-- <div class="footer">
-        <p> Proudly developed by Mateus Mori Ikezaki, 2020 <br> Developer's contact: mateus.ikezaki21@avenues.org </p>
-    </div> -->
     <br>
     <script src="app.js"></script>
 

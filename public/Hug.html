@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="divsprojects.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link rel="icon" href="Patriotism.png">
+    
+</head>
+<body>
+    <div class="blackscreen"></div>
+    <div class="description">
+        <h1>Hugging Robot</h1>
+        <h2>Isabela Soares</h2>
+    </div>
+    <div class="banner" style="background-image: url(./images/hb2.png)"></div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" >Home</a>
+                <!-- <img src="White.png" style="height: 15px; width: 7%; float: right; margin-top: 3%;"> -->
+            </li>
+
+            <li>
+                <a href="Elevator.html">Elevator Project</a>
+            </li>
+
+            <li>
+                <a href="Station.html">Anti Covid Station</a>
+            </li>
+
+            <li>
+                <a href="Hug.html" style="font-weight: bold;">Hugging Robot</a>
+                <img src="White.png">
+            </li>
+
+            <li>
+                <a href="Hand.html">Safe High Five</a>
+            </li>
+
+            <li>
+                <a href="MaskDis.html">Mask Dispenser</a>
+            </li>
+
+            <li>
+                <a href="App.html">Hued</a>
+            </li>
+
+            <li>
+                <a href="Days.html">7 Day Challenge!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1>Project's Description</h1>
+        <p>Want a hug? The hugging robot can do that! Want a friend? The hugging robot can also do that! The ESAR 
+            (Emotional Support Awesome Robot) is a robot that was designed to help children during quarantine, so they 
+            can have a soft friend for them to hug and calm down in this safe place. It is very hard for children to be 
+            kept at home for so long, and it becomes overwhelming after so much time. I believe ESAR is going to be able to 
+            lower this stress, the tension, with his soft and safe hug! S2 </p>
+    </div>
+
+    <br>
+
+    <div class="slidecontainer">
+        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract(2); Transition('EmptyTransition(2)')">
+        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add(2); Transition('EmptyTransition(2)')">
+        <div class="slide" style="background-image: url(./images/hb1.png);">
+        </div>
+    </div>
+
+    <div class="imageiconcontainer">
+        <div class="imageicon">
+            <a href="./images/hb1.png" target="_blank">
+                <img src="./images/hb1.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hb2.png" target="_blank">
+                <img src="./images/hb2.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hb3.jpg" target="_blank">
+                <img src="./images/hb3.jpg">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hb4.jpg" target="_blank">
+                <img src="./images/hb4.jpg">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hb5.jpg" target="_blank">
+                <img src="./images/hb5.jpg">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1> About my Project </h1>
+    </div>
+    <div class="projectdesc">
+        <p>I believe that this idea was all about challenging myself and creating things I like based on the coronavirus 
+            pandemic. I found it very nice being able to see my final product and enjoy it, but also look back to the 
+            process and realise how nice it was to try and do something different.</p> 
+            <h2>Robot Animation</h2>
+            <iframe src="https://drive.google.com/file/d/1QPvi5nCv4mrA-DLdXb2gBoROjhBX9XTz/preview"></iframe>
+        </div>
+
+    <!-- <div class="footer">
+        <p> Proudly developed by Mateus Mori Ikezaki, 2020 <br> Developer's contact: mateus.ikezaki21@avenues.org </p>
+    </div> -->
+    <br>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="divsprojects.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <link rel="icon" href="Patriotism.png">
+    
+</head>
+<body>
+    <div class="blackscreen"></div>
+    <div class="description">
+        <h1>Anti Covid Station</h1>
+        <h2>Maria Antonia · Heloisa Souza · Francisco Lara</h2>
+    </div>
+    <div class="banner" style="background-image: url(./images/hs2.jpg);"></div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" >Home</a>
+                <!-- <img src="White.png" style="height: 15px; width: 7%; float: right; margin-top: 3%;"> -->
+            </li>
+
+            <li>
+                <a href="Elevator.html">Elevator Project</a>
+            </li>
+
+            <li>
+                <a href="Station.html" style="font-weight: bold;">Anti Covid Station</a>
+                <img src="White.png">
+            </li>
+
+            <li>
+                <a href="Hug.html">Hugging Robot</a>
+            </li>
+
+            <li>
+                <a href="Hand.html">Safe High Five</a>
+            </li>
+
+            <li>
+                <a href="MaskDis.html">Mask Dispenser</a>
+            </li>
+
+            <li>
+                <a href="App.html">Hued</a>
+            </li>
+
+            <li>
+                <a href="Days.html">7 Day Challenge!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1>Project's Description</h1>
+        <p>Guarantee your safety at our anti COVID-19 staion where you can quickly santize your hand, desinfect your 
+            shoes and measure your temperature before entering Avenues campus to avoid the spread of virus.
+            This project consists of a station that has a touchless temperature measuring system, which will tell if you 
+            have a fever and have to go to the enfermary or not, an automatic hand sanitizer dispenser and also a carpet 
+            which has disinfectant product to clean the sole of people's shoes. The main function of this project is to give 
+            an extra security to people when coming back to school, ideally this product would stay in the front of the school 
+            and all the students and staff would pass trough it so that their hands are sanitized, the sole of the shoes as well, 
+            and confirm wheter they have a fever or not. This also will help preventing the spread of the virus, making the 
+            school a safer environmet.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="slidecontainer">
+        <img src="Arrow.png" style="float: left; left: 0%; transform: scaleX(-1);" onclick="Subtract(2); Transition('EmptyTransition(1)')">
+        <img src="Arrow.png" style="float: right; right: 0%;" onclick="Add(2); Transition('EmptyTransition(1)')">
+        <div class="slide" style="background-image: url(./images/hs1.jpg);">
+        </div>
+    </div>
+
+    <div class="imageiconcontainer">
+        <div class="imageicon">
+            <a href="./images/hs1.jpg" target="_blank">
+                <img src="./images/hs1.jpg">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hs2.jpg" target="_blank">
+                <img src="./images/hs2.jpg">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hs3.jpg" target="_blank">
+                <img src="./images/hs3.jpg">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hs4.png" target="_blank">
+                <img src="./images/hs4.png">
+            </a>
+        </div>
+        <div class="imageicon">
+            <a href="./images/hs5.png" target="_blank">
+                <img src="./images/hs5.png">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="description" style="margin-top: 5%; position: static;">
+        <h1> About our Project </h1>
+    </div>
+    <div class="projectdesc">
+        <p>Our project consists of two main systems, one is the touchless temperature measuring system and the other is the 
+            automatic hand sanitizer dispenser, which will be arranged in a bla bla bla. The touchless temperature 
+            measuring system is formed by, a ultrassonic sensor, which will see if the person is close enough to start 
+            measuring their temperature, a temperature sensor, which will be responsible to measure people's temperature, 
+            and two LED's, one red and the other green, the red means that you have a fever and you need to go to the 
+            enfermary while the green means that you are ok and can go to class. The automatic hand sanitizer dispenser 
+            consists only in a ultrassonic sensor, to see if the hand of the person is close enough to pour hand 
+            sanitizer, and a servo motor, that will pull a string which will squeeze the top of the hand sanitizer pouring 
+            the alcohol in gel on the person's hands.</p> 
+            <img src="./images/hs1.jpg">
+            <p>Our wish for this project's future is that is implmented on campus, it 
+            would mean a lot to us, besides the good it would cause for our school. One of our biggest challenges was to build 
+            and deliver the project in a week and a half, it was very challenging. </p>
+            <h2>Circuit Demonstration</h2>
+            <iframe src="https://drive.google.com/file/d/1bvlesnzeQObuk4pqJTOFyEoNnOc2NQ2J/preview"></iframe>
+            <iframe src="https://drive.google.com/file/d/1UUh2BPZ50N-LUlJYNw3ZwxnPuZiHF7h6/preview"></iframe>
+        
+    </div>
+    
+    <!-- <div class="footer">
+        <p> Proudly developed by Mateus Mori Ikezaki, 2020 <br> Developer's contact: mateus.ikezaki21@avenues.org </p>
+    </div> -->
+    <br>
+    <script src="app.js"></script>
+
+</body>
+</html>
