@@ -100,6 +100,12 @@ nav{
     font-size: 15px;
     margin-right: 10%;
 }
+.nav-links li img{
+    height: 15px; 
+    width: 7%; 
+    float: right; 
+    margin-top: 3%;
+}
 
 .nav-links a:hover{
     text-decoration: none;
