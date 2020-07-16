@@ -273,6 +273,21 @@ nav{
     margin-top: 3%;
 }
 
+@media only screen and (min-width: 414px)
+{
+   .slidecontainer{
+        height: 250px;
+   }
+
+    .slidecontainer img{
+        margin-top: 105px;
+    }
+
+    .slide h1{
+        padding-top: 50px;
+    }
+}
+
 /*iPad Configs*/
 @media only screen and (min-width: 768px)
 {

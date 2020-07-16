@@ -315,6 +315,18 @@ nav{
     font-size: 100%;
 }
 
+
+@media only screen and (min-width: 414px)
+{
+   .slidecontainer{
+        height: 250px;
+   }
+
+    .slidecontainer img{
+        margin-top: 105px;
+    }
+}
+
 /*iPad Configs*/
 @media only screen and (min-width: 768px)
 {
@@ -353,7 +365,7 @@ nav{
         height: 370px
     }
     .slidecontainer img{
-        margin-top: 20%;
+        margin-top: 165px;
     }
     
 
@@ -441,6 +453,10 @@ nav{
 
     .slidecontainer{
         height: 475px
+    }
+
+    .slidecontainer img{
+        margin-top: 217px;
     }
 
     .slide h1{
@@ -543,7 +559,7 @@ nav{
     }
 
     .slidecontainer img{
-        margin-top: 17%;
+        margin-top: 295px;
     }
 
     .nav-links{
