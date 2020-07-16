@@ -125,7 +125,7 @@ nav{
     left: 0px;
     right: 0px;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ nav{
     width: 10%;
     position: absolute;
     z-index: 2;
-    margin-top: 20%;
+    margin-top: 75px;
     cursor: pointer;
 }
 /* .slideblackscreen{
@@ -292,7 +292,7 @@ nav{
     }
 
     .description{
-        margin-top: 25%;
+        margin-top: 150px;
     }
     
     .description h1{
@@ -311,6 +311,9 @@ nav{
         height: 370px
     }
     
+    .slidecontainer img{
+        margin-top: 165px;
+    }
 
     .slide h1{
         padding-top: 5%;
@@ -389,6 +392,10 @@ nav{
         height: 475px
     }
 
+    .slidecontainer img{
+        margin-top: 217px;
+    }
+
     .slide h1{
         font-size: 400%;
     }
@@ -444,6 +451,10 @@ nav{
 
     .slidecontainer{
         height: 650px
+    }
+
+    .slidecontainer img{
+        margin-top: 295px;
     }
 
     .slide h1{
